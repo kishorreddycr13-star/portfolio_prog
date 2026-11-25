@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kishor Reddy C R — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Kishor Reddy C R, CSE (Data Science) student at Atria Institute of Technology, Bengaluru." />
+  <meta name="theme-color" content="#0a0a0c" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+
+<body>
+
+<!-- ════════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════════ -->
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <!-- Logo / wordmark -->
+      <a href="#hero" class="nav-logo" aria-label="Kishor Reddy C R — home">KR&thinsp;//&thinsp;DEV</a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button
+        id="hamburger"
+        class="hamburger"
+        aria-controls="nav-panel"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay & slide panel -->
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+  <aside id="nav-panel" aria-label="Navigation panel">
+    <a class="panel-link" href="#hero">     <span>01</span>Home</a>
+    <a class="panel-link" href="#about">    <span>02</span>About</a>
+    <a class="panel-link" href="#skills">   <span>03</span>Skills</a>
+    <a class="panel-link" href="#projects"> <span>04</span>Projects</a>
+    <a class="panel-link" href="#contact">  <span>05</span>Contact</a>
+  </aside>
+</header>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════ -->
+<section id="hero" aria-labelledby="hero-name">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Left: text -->
+      <div class="hero-text">
+        <div class="hero-tag">
+          <span class="hero-tag-dot" aria-hidden="true"></span>
+          Available for Internships
+        </div>
+
+        <h1 id="hero-name" class="hero-name">
+          Hi, I'm<br>
+          <span class="grad-text">Kishor Reddy C R</span>
+        </h1>
+
+        <p class="hero-subtitle">CSE (Data Science) Student&nbsp;·&nbsp;Aspiring Developer</p>
+
+        <div class="typewriter-wrap" aria-live="polite" aria-atomic="true">
+          <span id="typewriter-text"></span>
+        </div>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Explore My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: arc reactor visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="arc-reactor-big">
+          <!-- Spinning rings -->
+          <div class="arc-ring ring-1"></div>
+          <div class="arc-ring ring-2"></div>
+          <div class="arc-ring ring-3"></div>
+          <div class="arc-ring ring-4"></div>
+          <div class="ring-dots"></div>
+
+          <!-- Floating stat chips -->
+          <div class="stat-chip chip-top">Python</div>
+          <div class="stat-chip chip-right">MySQL</div>
+          <div class="stat-chip chip-bottom">Data Science</div>
+          <div class="stat-chip chip-left">C Lang</div>
+
+          <!-- Glowing Hero Avatar in Reactor Center -->
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar-glow" aria-hidden="true"></div>
+            <img src="assets/kishor-photo.jpg" alt="Kishor Reddy C R" class="hero-avatar-img">
+            <div class="hero-avatar-badge">
+              <span>CSE · DATA SCIENCE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- .hero-inner -->
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint" aria-hidden="true">
+    <span class="scroll-arrow"></span>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════════════════ -->
+<section id="about" class="section-pad" aria-labelledby="about-title">
+  <div class="container">
+    <p class="section-label reveal">Who I Am</p>
+    <h2 id="about-title" class="section-title reveal reveal-delay-1">
+      About <span class="grad-text">Me</span>
+    </h2>
+    <hr class="glow-divider reveal reveal-delay-2" />
+
+    <div class="about-grid">
+      <!-- Text column -->
+      <div class="about-text">
+        <p class="reveal reveal-delay-1">
+          I'm <strong>Kishor Reddy C R</strong>, a passionate student pursuing
+          <strong>B.E. in Computer Science and Engineering (Data Science)</strong> at
+          <strong>Atria Institute of Technology, Bengaluru</strong>.
+        </p>
+        <p class="reveal reveal-delay-2">
+          My academic journey has introduced me to core programming through
+          <strong>Python</strong> and <strong>C</strong>, and I've been exploring
+          database systems using <strong>MySQL and DBMS concepts</strong>. I'm
+          drawn to the intersection of data, logic and software — where raw
+          information becomes something meaningful.
+        </p>
+        <p class="reveal reveal-delay-3">
+          I believe in learning by building. Every project, every bug, every
+          late-night debug session is a step forward. I'm actively looking for
+          opportunities to apply my skills and grow through real-world challenges.
+        </p>
+
+        <div class="about-highlight reveal reveal-delay-4">
+          "Curious by nature, driven by data — always building something new."
+        </div>
+
+        <!-- Interests -->
+        <div class="interests-row" style="margin-top:2rem;">
+          <div class="interest-item reveal">
+            <div class="interest-icon" aria-hidden="true">💡</div>
+            <div class="interest-info">
+              <h4>Problem Solving</h4>
+              <p>Breaking down complex problems and finding elegant code-based solutions.</p>
+            </div>
+          </div>
+          <div class="interest-item reveal reveal-delay-1">
+            <div class="interest-icon" aria-hidden="true">📊</div>
+            <div class="interest-info">
+              <h4>Data Science</h4>
+              <p>Exploring how data can drive decisions, predictions and insights.</p>
+            </div>
+          </div>
+          <div class="interest-item reveal reveal-delay-2">
+            <div class="interest-icon" aria-hidden="true">🔧</div>
+            <div class="interest-info">
+              <h4>Software Development</h4>
+              <p>Learning to design and build useful, functional applications from scratch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile & Education column -->
+      <div class="reveal reveal-delay-2">
+        <div class="about-profile-card glass" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem; border-radius: 16px;">
+          <img src="assets/kishor-photo.jpg" alt="Kishor Reddy C R" style="width: 76px; height: 76px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); box-shadow: 0 0 18px rgba(212,160,23,.35); flex-shrink: 0;">
+          <div>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--white); line-height: 1.2;">Kishor Reddy C R</h3>
+            <p style="font-size: 0.85rem; color: var(--gold-light); font-family: var(--font-mono); margin-top: 0.25rem;">CSE (Data Science) Student</p>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-top: 0.15rem;">Atria Institute of Technology, Bengaluru</p>
+          </div>
+        </div>
+
+        <div class="edu-card glass">
+          <span class="corner-tl" aria-hidden="true"></span>
+          <span class="corner-tr" aria-hidden="true"></span>
+          <span class="corner-bl" aria-hidden="true"></span>
+          <span class="corner-br" aria-hidden="true"></span>
+
+          <div class="edu-card-head">
+            <div class="edu-icon" aria-hidden="true">🏛️</div>
+            <div>
+              <div class="edu-institute">Atria Institute of Technology</div>
+              <div class="edu-location">📍 Bengaluru, Karnataka</div>
+            </div>
+          </div>
+
+          <div class="edu-detail-row">
+            <span class="edu-badge">B.E. · CSE (Data Science)</span>
+          </div>
+
+          <div class="edu-detail-row">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span style="font-size:.84rem;color:var(--muted);">Currently Enrolled</span>
+          </div>
+
+          <div class="edu-courses">
+            <h4>Key Subjects</h4>
+            <div class="course-tags">
+              <span class="course-tag">Python Programming</span>
+              <span class="course-tag">C Language</span>
+              <span class="course-tag">DBMS &amp; MySQL</span>
+              <span class="course-tag">Data Structures</span>
+              <span class="course-tag">Mathematics</span>
+              <span class="course-tag">OOP Concepts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick stats -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.25rem;">
+          <div class="glass" style="padding:1.1rem;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;background:var(--g-ro);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">3+</div>
+            <div style="font-size:.75rem;color:var(--muted);margin-top:.25rem;letter-spacing:.08em;text-transform:uppercase;">Languages</div>
+          </div>
+          <div class="glass" style="padding:1.1rem;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;background:var(--g-og);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">∞</div>
+            <div style="font-size:.75rem;color:var(--muted);margin-top:.25rem;letter-spacing:.08em;text-transform:uppercase;">Curiosity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════════════════════════ -->
+<section id="skills" class="section-pad" aria-labelledby="skills-title">
+  <div class="container">
+    <p class="section-label reveal">What I Know</p>
+    <h2 id="skills-title" class="section-title reveal reveal-delay-1">
+      Core <span class="grad-text">Skills</span>
+    </h2>
+    <p class="section-desc reveal reveal-delay-2">
+      Technologies I've learned through coursework and personal projects.
+      Proficiency indicators reflect my current learning stage — not claimed expertise.
+    </p>
+    <hr class="glow-divider reveal reveal-delay-3" />
+
+    <!-- JS renders skill cards here -->
+    <div id="skills-cards" class="skills-layout" role="list" aria-label="Skill cards"></div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════════════════════════ -->
+<section id="projects" class="section-pad" aria-labelledby="projects-title">
+  <div class="container">
+    <p class="section-label reveal">What I've Built</p>
+    <h2 id="projects-title" class="section-title reveal reveal-delay-1">
+      Projects <span class="grad-text">&amp; Work</span>
+    </h2>
+    <p class="section-desc reveal reveal-delay-2">
+      Below are project slots ready to showcase your work.
+      Edit the placeholders with your real project details when ready.
+    </p>
+    <hr class="glow-divider reveal reveal-delay-3" />
+
+    <div class="projects-grid">
+
+      <!-- ── FEATURED PROJECT 1 ── -->
+      <article class="project-card glass reveal" aria-label="Smart Pet Health & Vaccination Monitoring System">
+        <span class="project-badge">🚀 Featured Project</span>
+        <h3>Smart Pet Health &amp; Vaccination Monitoring System</h3>
+        <p>An intelligent healthcare and monitoring solution designed to track pet wellness vitals, manage automated vaccination schedules, maintain digital medical records, and notify pet owners with timely preventive care alerts.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">MySQL</span>
+          <span class="tech-pill">DBMS</span>
+          <span class="tech-pill">Health Monitoring</span>
+        </div>
+        <div class="project-actions">
+          <button class="btn btn-outline btn-sm" disabled aria-disabled="true">GitHub (add link)</button>
+          <button class="btn btn-primary btn-sm" disabled aria-disabled="true">Demo (add link)</button>
+        </div>
+      </article>
+
+      <!-- ── PROJECT PLACEHOLDER 2 ── -->
+      <article class="project-card glass reveal reveal-delay-1" aria-label="Project placeholder 2">
+        <span class="project-badge placeholder">✏️ Add Your Project</span>
+        <h3>[ Your Project Title ]</h3>
+        <p class="placeholder-note">Replace this card with your real project details — what it does, why you built it, and what you learned.</p>
+        <p>Describe what makes this project meaningful — even small, well-explained projects demonstrate growth and initiative.</p>
+        <div class="project-tech">
+          <span class="tech-pill">C</span>
+          <span class="tech-pill">Add More</span>
+        </div>
+        <div class="project-actions">
+          <button class="btn btn-outline btn-sm" disabled aria-disabled="true">GitHub (add link)</button>
+          <button class="btn btn-primary btn-sm" disabled aria-disabled="true">Demo (add link)</button>
+        </div>
+      </article>
+
+      <!-- ── PROJECT PLACEHOLDER 3 ── -->
+      <article class="project-card glass reveal reveal-delay-2" aria-label="Project placeholder 3">
+        <span class="project-badge placeholder">✏️ Add Your Project</span>
+        <h3>[ Your Project Title ]</h3>
+        <p class="placeholder-note">Replace this card with your real project details — what it does, why you built it, and what you learned.</p>
+        <p>Include the technologies used, your role in building it, and a link to the repo or live demo once available.</p>
+        <div class="project-tech">
+          <span class="tech-pill">MySQL</span>
+          <span class="tech-pill">Add More</span>
+        </div>
+        <div class="project-actions">
+          <button class="btn btn-outline btn-sm" disabled aria-disabled="true">GitHub (add link)</button>
+          <button class="btn btn-primary btn-sm" disabled aria-disabled="true">Demo (add link)</button>
+        </div>
+      </article>
+
+    </div><!-- .projects-grid -->
+
+    <!-- Hint for editing -->
+    <p style="margin-top:2rem;font-size:.82rem;color:var(--muted2);text-align:center;font-style:italic;">
+      ✏️ Edit the project cards in <code style="color:var(--muted);background:rgba(255,255,255,.05);padding:.1rem .4rem;border-radius:4px;">index.html</code> → Projects section to add your real projects.
+    </p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════════════════ -->
+<section id="contact" class="section-pad" aria-labelledby="contact-title">
+  <div class="container">
+    <p class="section-label reveal">Get In Touch</p>
+    <h2 id="contact-title" class="section-title reveal reveal-delay-1">
+      Contact <span class="grad-text">Me</span>
+    </h2>
+    <hr class="glow-divider reveal reveal-delay-2" />
+
+    <div class="contact-layout">
+
+      <!-- Left: info -->
+      <div class="contact-info reveal">
+        <h3>Let's Connect</h3>
+        <p>
+          I'm always open to discussions about projects, internship opportunities,
+          or just a chat about tech and data science. Feel free to reach out!
+        </p>
+
+        <div class="social-links" style="margin-top:1.5rem;">
+          <!--
+            INSTRUCTIONS: Replace the href="#" values below with your real
+            profile URLs when available. Remove or hide entries without real links.
+          -->
+          <a href="mailto:kishorreddycr13@gmail.com" class="social-link" aria-label="Email: kishorreddycr13@gmail.com">
+            <span class="social-link-icon" aria-hidden="true">📧</span>
+            <div>
+              <span>Email</span>
+              <small>kishorreddycr13@gmail.com</small>
+            </div>
+          </a>
+          <a href="tel:+919353822552" class="social-link" aria-label="Phone: +91 9353822552">
+            <span class="social-link-icon" aria-hidden="true">📱</span>
+            <div>
+              <span>Phone</span>
+              <small>+91 9353822552</small>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/kishor-reddy-c-r-99290b331/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: Kishor Reddy C R">
+            <span class="social-link-icon" aria-hidden="true">💼</span>
+            <div>
+              <span>LinkedIn</span>
+              <small>Kishor Reddy C R</small>
+            </div>
+          </a>
+          <div class="social-link" role="group" aria-label="GitHub — add your URL">
+            <span class="social-link-icon" aria-hidden="true">💻</span>
+            <div>
+              <span>GitHub</span>
+              <small>Add your GitHub URL in index.html</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="reveal reveal-delay-2">
+        <form
+          id="contact-form"
+          class="contact-form-wrap glass"
+          novalidate
+          aria-label="Contact form"
+        >
+          <!-- Status message -->
+          <div id="form-status" class="form-status" aria-live="polite"></div>
+
+          <div class="form-group">
+            <label for="f-name">Your Name <span aria-hidden="true" style="color:var(--red);">*</span></label>
+            <input
+              id="f-name"
+              class="form-input"
+              type="text"
+              name="name"
+              placeholder="e.g. Rahul Sharma"
+              autocomplete="name"
+              required
+              aria-required="true"
+              aria-describedby="err-name"
+            />
+            <span id="err-name" class="field-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="f-email">Email Address <span aria-hidden="true" style="color:var(--red);">*</span></label>
+            <input
+              id="f-email"
+              class="form-input"
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-describedby="err-email"
+            />
+            <span id="err-email" class="field-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="f-message">Message <span aria-hidden="true" style="color:var(--red);">*</span></label>
+            <textarea
+              id="f-message"
+              class="form-textarea"
+              name="message"
+              placeholder="Tell me what you'd like to discuss…"
+              required
+              aria-required="true"
+              aria-describedby="err-message"
+            ></textarea>
+            <span id="err-message" class="field-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <button id="form-submit" class="btn btn-primary" type="submit" style="width:100%;justify-content:center;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer id="footer" role="contentinfo">
+  <div class="footer-divider-bar" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer-inner">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">Kishor Reddy C R</div>
+        <p>CSE (Data Science) Student at Atria Institute of Technology, Bengaluru. Building skills one project at a time.</p>
+      </div>
+
+      <!-- Nav -->
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Social (placeholders) -->
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://www.linkedin.com/in/kishor-reddy-c-r-99290b331/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kishorreddycr13@gmail.com">Email</a>
+        <a href="tel:+919353822552">Phone</a>
+        <span title="Add your GitHub URL">GitHub — (add link)</span>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Kishor Reddy C R. Built with ❤️ &amp; Vanilla JS.</span>
+      <a href="#hero" aria-label="Back to top">↑ Back to top</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     JavaScript (deferred — order matters)
+════════════════════════════════════════════════════════════ -->
+<script src="js/main.js" defer></script>
+<script src="js/contact.js" defer></script>
+
+</body>
+</html>
